@@ -1,36 +1,36 @@
-This [three.js](threejs.org) template allows multiplayer three.js scenes with integrated audio/video capabilities.  It uses a node server running socket.io to provide multiplayer functionality as well as WebRTC signaling. 
+## Three js Video Chat
 
-![image of multiplayer 3D scene](/docs/images/threejs-webrtc.gif)
+This is a simple example of rendering a local and remote video stream in a three dimensional environment using WebRTC, Node.js, Socket.io and Three.js.
+This example is put together using Hiren Kavad's PeerChat and Lee Stemkoski's Three.js Webcam-Texture example. PeerChat has been modified to also work with Mozilla Firefox
 
-## Quickstart:
+![ScreenShot](/images/screenshot01.png)
 
-1. Download the repository to your computer: 
-    ```bash
-    $ git clone https://github.com/AidanNelson/threejs-webrtc.git
-    ```
-2. Navigate into the local folder and install Node dependencies:
-    ```bash
-    $ cd threejs-webrtc
-    $ npm install
-    ```
-3. Start the server:
-    ```bash
-    $ npm start
-    ```
-4. Navigate to `http://localhost:1989` on your browser.
+## If you want to run on your server
 
-## Technology:
+  - Clone to your machine
+  - run npm install from your CLI
+  - Add Turn Server API Key to script tag of index.html
+  - If you don't have API Key you can get it for free on TurnServers.com
+  - run node server.js command
+  - Open localhost:3000 in two tabs/windows
+  - And You Go....
 
-This space is built using a number of technologies, including:
+## To Do
 
-* [three.js](https://threejs.org/) provides rendering / 3D environment interaction
-* [socket.io](https://socket.io/) provides the three.js multiplayer functionality, and acts as a WebRTC signaling server
-* [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) provides video / audio chat functionality
+* Fix cross-browser bugs between Firefox and Chrome
+* Put username/room inputs back (currently hardcoded for debugging purposes)
 
-## Credits:
+## Authors
 
-This template uses code from a number of sources, including: 
+* Zachary Stenger
 
-* Or Fleisher - [THREE.Multiplayer](https://github.com/juniorxsound/THREE.Multiplayer) server and client setup using socket.io with three.js
-* Mikołaj Wargowski - [Simple Chat App](https://github.com/Miczeq22/simple-chat-app) using [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) with three.js
-* Zachary Stenger - [Three.js Video Chat](https://github.com/zacharystenger/three-js-video-chat) using [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
+* Hiren Kavad
+
+## License
+
+This bundle is dual-licensed under MIT and GPL licenses.
+
+* [http://www.opensource.org/licenses/mit-license.php](http://www.opensource.org/licenses/mit-license.php)
+* [http://www.gnu.org/licenses/gpl.html](http://www.gnu.org/licenses/gpl.html)
+
+Use it, change it, fork it, sell it. Do whatever you want, but please leave the author attribution.

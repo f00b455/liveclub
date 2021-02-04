@@ -1,16 +1,21 @@
 {
-  "name": "three.js-webrtc",
-  "version": "1.0.0",
-  "description": "Template for using three.js with socket.io and WebRTC",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+  "name": "PeerChat",
+  "version": "0.0.1",
+  "description": "Peer Chat: Video Chatting Application",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/webrtc/codelab"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "socket.io",
+    "video chat"
+  ],
+  "author": "https://github.com/Hironate",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1",
-    "socket.io": "^2.3.0"
+    "node-static": "~0.7.1",
+    "socket.io": "~0.9.16",
+    "express": "~3.4.0"
   }
 }
